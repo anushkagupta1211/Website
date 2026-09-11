@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#FBF6EE" />
+
+  <!-- ==========================================================
+       SEO / SOCIAL META
+       ========================================================== -->
+  <title>Kahani Taste Ki — Authentic North Indian Thali in HSR Layout, Bengaluru</title>
+  <meta name="description" content="Kahani Taste Ki serves authentic North Indian thalis, homestyle comfort food and lunch-hour meals in HSR Layout, Bengaluru. A little story in every bite." />
+  <meta name="keywords" content="North Indian restaurant HSR Layout, thali Bengaluru, lunch hour thali, veg thali, egg thali, Kahani Taste Ki" />
+  <meta name="author" content="Kahani Taste Ki" />
+  <link rel="canonical" href="https://kahanitasteki.example/" />
+
+  <meta property="og:type" content="restaurant" />
+  <meta property="og:title" content="Kahani Taste Ki — Where Every Thali Tells a Story" />
+  <meta property="og:description" content="Authentic North Indian flavours, comforting thalis and homestyle food in the heart of HSR Layout, Bengaluru." />
+  <meta property="og:locale" content="en_IN" />
+  <!-- IMAGE: Open Graph share image — replace with a real restaurant photo (1200x630) -->
+  <meta property="og:image" content="https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=1200&q=80" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Favicon (inline SVG so the site runs with zero extra assets) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23C25B3E'/%3E%3Ctext x='50' y='68' font-size='58' font-family='Georgia,serif' fill='%23FBF6EE' text-anchor='middle'%3EK%3C/text%3E%3C/svg%3E" />
+
+  <!-- ==========================================================
+       FONTS — Playfair Display (headings) + DM Sans (body)
+       ========================================================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style_2.css" />
+
+  <!-- Structured data — helps Google show the restaurant correctly -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Kahani Taste Ki",
+    "slogan": "A little story in every bite.",
+    "servesCuisine": ["North Indian", "Indian"],
+    "priceRange": "₹₹",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "371/A, 17th Main Rd, near Twin Park, Sector 3, HSR Layout",
+      "addressLocality": "Bengaluru",
+      "addressRegion": "Karnataka",
+      "postalCode": "560102",
+      "addressCountry": "IN"
+    },
+    "hasMenu": {
+      "@type": "Menu",
+      "name": "Thali Menu"
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Accessibility: lets keyboard users jump straight to content -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ==========================================================
+       NAVBAR — transparent over the hero, solid cream on scroll
+       ========================================================== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a class="nav__logo" href="#home" aria-label="Kahani Taste Ki — home">
+        <span class="nav__logo-mark" aria-hidden="true">K</span>
+        <span class="nav__logo-text">Kahani <em>Taste Ki</em></span>
+      </a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="#home">Home</a>
+        <a href="#story">Our Story</a>
+        <a href="#menu">Menu</a>
+        <a href="#experience">Experience</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#visit">Visit Us</a>
+        <!-- Duplicated CTA so it also appears inside the mobile drawer -->
+        <a href="#menu" class="btn btn--solid nav__links-cta">Explore Menu</a>
+      </nav>
+
+      <div class="nav__actions">
+        <a href="#menu" class="btn btn--solid nav__cta">Explore Menu</a>
+
+        <!-- Animated hamburger -->
+        <button class="nav__burger" id="navBurger" type="button"
+                aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+          <span class="nav__burger-bar"></span>
+          <span class="nav__burger-bar"></span>
+          <span class="nav__burger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Dim layer behind the mobile drawer -->
+  <div class="nav__scrim" id="navScrim" hidden></div>
+
+  <main id="main">
+
+    <!-- ==========================================================
+         HERO — cinematic full screen
+         ========================================================== -->
+    <section class="hero" id="home">
+      <div class="hero__media" data-parallax="0.12">
+        <!-- IMAGE: HERO BACKGROUND — replace with your own wide thali / restaurant shot (min 2000px wide) -->
+        <img class="hero__img"
+             src="IMAGES/image-1.avif"
+             alt="An authentic North Indian thali with curries, rice, roti and accompaniments" />
+      </div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+
+      <!-- Decorative floating elements -->
+      <span class="float-dot float-dot--a" aria-hidden="true"></span>
+      <span class="float-dot float-dot--b" aria-hidden="true"></span>
+
+      <div class="hero__content container">
+        <p class="eyebrow eyebrow--light reveal" data-reveal>A little story in every bite</p>
+
+        <h1 class="hero__title reveal" data-reveal data-reveal-delay="100">
+          Where Every Thali<br />Tells a <em class="accent-italic">Story.</em>
+        </h1>
+
+        <p class="hero__lede reveal" data-reveal data-reveal-delay="200">
+          Authentic North Indian flavours, comforting thalis and homestyle food
+          served with warmth in the heart of HSR Layout.
+        </p>
+
+        <div class="hero__actions reveal" data-reveal data-reveal-delay="300">
+          <a href="#menu" class="btn btn--solid btn--lg">Explore Our Thalis</a>
+          <a href="#visit" class="btn btn--ghost btn--lg">Visit Us</a>
+        </div>
+      </div>
+
+      <!-- Bottom strip -->
+      <div class="hero__foot container reveal" data-reveal data-reveal-delay="400">
+        <div class="hero__foot-item">
+          <span class="hero__foot-label">Location</span>
+          <span class="hero__foot-value">HSR Layout, Bengaluru</span>
+        </div>
+        <span class="hero__foot-rule" aria-hidden="true"></span>
+        <div class="hero__foot-item">
+          <span class="hero__foot-label">Kitchen</span>
+          <span class="hero__foot-value">North Indian Thali &amp; Comfort Food</span>
+        </div>
+        <a class="hero__scroll" href="#story" aria-label="Scroll to our story">
+          <span class="hero__scroll-line" aria-hidden="true"></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         OUR STORY — two column editorial
+         ========================================================== -->
+    <section class="section story" id="story">
+      <div class="container story__grid">
+        <div class="story__media reveal" data-reveal>
+          <figure class="frame frame--tall">
+            <!-- IMAGE: STORY — replace with a photo of your kitchen, chef or a signature dish -->
+            <img src="IMAGES/IMAGE-2.avif"
+                 alt="A spread of homestyle North Indian dishes served on a wooden table"
+                 loading="lazy" decoding="async" />
+          </figure>
+          <!-- Small overlapping accent card -->
+          <div class="story__badge glass" aria-hidden="true">
+            <span class="story__badge-num">Est.</span>
+            <span class="story__badge-txt">HSR Layout<br />Bengaluru</span>
+          </div>
+        </div>
+
+        <div class="story__body">
+          <p class="eyebrow reveal" data-reveal>The Kahani</p>
+          <h2 class="h2 reveal" data-reveal data-reveal-delay="80">
+            Food that feels<br />like <em class="accent-italic">home.</em>
+          </h2>
+          <p class="lede reveal" data-reveal data-reveal-delay="160">
+            Kahani Taste Ki began with a simple thought — that a good meal should feel
+            like someone was waiting for you. Our kitchen cooks the way homes across
+            North India do: unhurried, generous, and seasoned by memory rather than
+            measurement.
+          </p>
+          <p class="reveal" data-reveal data-reveal-delay="220">
+            Every thali that leaves our pass carries a little of that warmth. The dal
+            that simmers slow, the rotis that arrive still soft, the sabzi that tastes
+            of a weekday afternoon at your grandmother's table. We are a small place in
+            HSR Layout with a big belief — that food is the easiest way to tell a story,
+            and the kindest way to be remembered.
+          </p>
+          <a href="#menu" class="text-link reveal" data-reveal data-reveal-delay="280">
+            Explore our food <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         SIGNATURE MENU — three premium cards
+         ========================================================== -->
+    <section class="section menu" id="menu">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow reveal" data-reveal>Signature Thalis</p>
+          <h2 class="h2 reveal" data-reveal data-reveal-delay="80">
+            Our Thali, Your <em class="accent-italic">Story.</em>
+          </h2>
+          <p class="section-head__sub reveal" data-reveal data-reveal-delay="140">
+            Simple, satisfying and full of flavour.
+          </p>
+        </header>
+
+        <div class="menu__grid">
+
+          <!-- Card 1 -->
+          <article class="card reveal" data-reveal>
+            <div class="card__media">
+              <!-- IMAGE: MENU CARD 1 — North Indian Thali -->
+              <img src="IMAGES/IMAGE-3.avif"
+                   alt="North Indian thali with dal, sabzi, rice, roti and salad"
+                   loading="lazy" decoding="async" />
+              <span class="card__badge">Popular</span>
+            </div>
+            <div class="card__body">
+              <div class="card__row">
+                <h3 class="card__title">North Indian Thali</h3>
+                <p class="card__price">₹249</p>
+              </div>
+              <p class="card__desc">
+                A wholesome spread of comforting North Indian favourites served together
+                in one satisfying thali.
+              </p>
+              <a href="#visit" class="card__link">View Details <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="card reveal" data-reveal data-reveal-delay="120">
+            <div class="card__media">
+              <!-- IMAGE: MENU CARD 2 — Mini Veg Thali -->
+              <img src="IMAGES/IMAGE-4.avif"
+                   alt="Mini vegetarian thali with paneer curry, rice and roti"
+                   loading="lazy" decoding="async" />
+            </div>
+            <div class="card__body">
+              <div class="card__row">
+                <h3 class="card__title">Mini Veg Thali</h3>
+                <p class="card__price">₹169</p>
+              </div>
+              <p class="card__desc">
+                A lighter yet flavour-packed vegetarian meal for everyday lunch.
+              </p>
+              <a href="#visit" class="card__link">View Details <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="card reveal" data-reveal data-reveal-delay="240">
+            <div class="card__media">
+              <!-- IMAGE: MENU CARD 3 — Egg Thali -->
+              <img src="IMAGES/IMAGE-5.avif"
+                   alt="Egg curry served with rice and Indian bread"
+                   loading="lazy" decoding="async" />
+            </div>
+            <div class="card__body">
+              <div class="card__row">
+                <h3 class="card__title">Egg Thali</h3>
+                <p class="card__price">₹189</p>
+              </div>
+              <p class="card__desc">
+                Delicious egg-based comfort food served with authentic Indian flavours.
+              </p>
+              <a href="#visit" class="card__link">View Details <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+        </div>
+
+        <p class="menu__note reveal" data-reveal>
+          Also serving our <strong>Lunch Hour Thali</strong> — ask for today's plate.
+        </p>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         WHY CHOOSE US — four numbered feature blocks
+         ========================================================== -->
+    <section class="section why">
+      <div class="container">
+        <header class="section-head section-head--left">
+          <p class="eyebrow reveal" data-reveal>Why Kahani</p>
+          <h2 class="h2 reveal" data-reveal data-reveal-delay="80">
+            Small kitchen.<br /><em class="accent-italic">Big-hearted</em> food.
+          </h2>
+        </header>
+
+        <div class="why__grid">
+          <article class="feature reveal" data-reveal>
+            <span class="feature__num">01</span>
+            <h3 class="feature__title">Freshly Prepared</h3>
+            <p class="feature__text">Made fresh for every meal.</p>
+          </article>
+
+          <article class="feature reveal" data-reveal data-reveal-delay="100">
+            <span class="feature__num">02</span>
+            <h3 class="feature__title">Authentic North Indian</h3>
+            <p class="feature__text">Traditional flavours inspired by home kitchens.</p>
+          </article>
+
+          <article class="feature reveal" data-reveal data-reveal-delay="200">
+            <span class="feature__num">03</span>
+            <h3 class="feature__title">Generous Portions</h3>
+            <p class="feature__text">A satisfying meal every time.</p>
+          </article>
+
+          <article class="feature reveal" data-reveal data-reveal-delay="300">
+            <span class="feature__num">04</span>
+            <h3 class="feature__title">Made With Love</h3>
+            <p class="feature__text">Warm hospitality and comforting food.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         EXPERIENCE — dark cinematic section
+         ========================================================== -->
+    <section class="section experience" id="experience">
+      <div class="container experience__grid">
+        <div class="experience__body">
+          <p class="eyebrow eyebrow--light reveal" data-reveal>The Experience</p>
+          <h2 class="h2 h2--light reveal" data-reveal data-reveal-delay="80">
+            Come hungry.<br />Leave with a <em class="accent-italic">story.</em>
+          </h2>
+          <p class="lede lede--light reveal" data-reveal data-reveal-delay="160">
+            Some tables are for quick lunches between meetings. Some are for friends who
+            stay an hour longer than they planned. Ours are for both. Pull up a chair with
+            colleagues, bring the family on a Sunday, or come alone with a book — the
+            thali arrives the same way every time: hot, generous and unhurried.
+          </p>
+
+          <div class="experience__highlights">
+            <div class="highlight reveal" data-reveal data-reveal-delay="220">
+              <span class="highlight__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+                  <circle cx="12" cy="12" r="9" /><path d="M12 7v5l3.5 2" stroke-linecap="round" />
+                </svg>
+              </span>
+              <h3 class="highlight__title">Lunch Hour</h3>
+              <p class="highlight__text">Perfect for your midday meal.</p>
+            </div>
+
+            <div class="highlight reveal" data-reveal data-reveal-delay="300">
+              <span class="highlight__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+                  <path d="M12 20s-7-4.35-7-9a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 4.65-7 9-7 9z" stroke-linejoin="round" />
+                </svg>
+              </span>
+              <h3 class="highlight__title">Comfort Food</h3>
+              <p class="highlight__text">Familiar flavours, satisfying plates.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Layered / overlapping image composition -->
+        <div class="experience__media reveal" data-reveal data-reveal-delay="120">
+          <figure class="frame frame--gold experience__img experience__img--back">
+            <!-- IMAGE: EXPERIENCE (back) — restaurant interior / dining area -->
+            <img src="IMAGES/IMAGE-6.avif"
+                 alt="Warmly lit restaurant dining area with wooden tables"
+                 loading="lazy" decoding="async" />
+          </figure>
+          <figure class="frame frame--gold experience__img experience__img--front" data-parallax="0.06">
+            <!-- IMAGE: EXPERIENCE (front) — close-up of a dish being served -->
+            <img src="IMAGES/IMAGE-7.avif"
+                 alt="Close-up of a rich North Indian curry served in a copper bowl"
+                 loading="lazy" decoding="async" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         GALLERY — Pinterest style masonry
+         ========================================================== -->
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow reveal" data-reveal>The Gallery</p>
+          <h2 class="h2 reveal" data-reveal data-reveal-delay="80">
+            A table full of <em class="accent-italic">stories.</em>
+          </h2>
+        </header>
+
+        <!-- CSS multi-column masonry -->
+        <div class="masonry">
+
+          <figure class="tile reveal" data-reveal>
+            <!-- IMAGE: GALLERY — North Indian Thali -->
+            <img src="IMAGES/IMAGE-8.avif"
+                 alt="A complete North Indian thali served on a steel plate" loading="lazy" decoding="async" />
+            <figcaption class="tile__cap">North Indian Thali</figcaption>
+          </figure>
+
+          <figure class="tile reveal" data-reveal data-reveal-delay="60">
+            <!-- IMAGE: GALLERY — Dal -->
+            <img src="IMAGES/IMAGE-9.avif"
+                 alt="Bowl of slow-cooked dal garnished with coriander" loading="lazy" decoding="async" />
+            <figcaption class="tile__cap">Slow-cooked Dal</figcaption>
+          </figure>
+
+          <figure class="tile reveal" data-reveal data-reveal-delay="120">
+            <!-- IMAGE: GALLERY — Roti -->
+            <img src="IMAGES/IMAGE-10.avif"
+                 alt="Freshly made Indian flatbread stacked in a basket" loading="lazy" decoding="async" />
+            <figcaption class="tile__cap">Fresh Roti</figcaption>
+          </figure>
+
+          <figure class="tile reveal" data-reveal data-reveal-delay="180">
+            <!-- IMAGE: GALLERY — Paneer -->
+            <img src="IMAGES/IMAGE-11.jpeg"
+                 alt="Paneer curry in a rich tomato gravy" loading="lazy" decoding="async" />
+            <figcaption class="tile__cap">Paneer</figcaption>
+          </figure>
+
+          <figure class="tile reveal" data-reveal data-reveal-delay="60">
+            <!-- IMAGE: GALLERY — Egg Curry -->
+            <img src="IMAGES/IMAGE-12.avif"
+                 alt="Egg curry simmering in a spiced onion gravy" loading="lazy" decoding="async" />
+            <figcaption class="tile__cap">Egg Curry</figcaption>
+          </figure>
+
+          <figure class="tile reveal" data-reveal data-reveal-delay="120">
+            <!-- IMAGE: GALLERY — Rice -->
+            <img src="IMAGES/IMAGE-13.avif"
+                 alt="Steamed basmati rice served in a bowl" loading="lazy" decoding="async" />
+            <figcaption class="tile__cap">Steamed Rice</figcaption>
+          </figure>
+
+          <figure class="tile reveal" data-reveal data-reveal-delay="180">
+            <!-- IMAGE: GALLERY — Restaurant Interior -->
+            <img src="IMAGES/IMAGE-14.avif"
+                 alt="Interior of a cosy restaurant with warm lighting" loading="lazy" decoding="async" />
+            <figcaption class="tile__cap">Our Space</figcaption>
+          </figure>
+
+          <figure class="tile reveal" data-reveal data-reveal-delay="240">
+            <!-- IMAGE: GALLERY — Dining Table -->
+            <img src="IMAGES/IMAGE-15.jpeg"
+                 alt="Friends sharing a meal around a dining table" loading="lazy" decoding="async" />
+            <figcaption class="tile__cap">Around the Table</figcaption>
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         QUOTE — full width cream
+         ========================================================== -->
+    <section class="section quote">
+      <div class="container quote__inner">
+        <span class="quote__mark" aria-hidden="true">&ldquo;</span>
+        <blockquote class="quote__text reveal" data-reveal>
+          Good food doesn't just fill your stomach. It stays with you.
+        </blockquote>
+        <p class="quote__by reveal" data-reveal data-reveal-delay="120">— Kahani Taste Ki</p>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         VISIT US — split layout with stylised map
+         ========================================================== -->
+    <section class="section visit" id="visit">
+      <div class="container visit__grid">
+        <div class="visit__body">
+          <p class="eyebrow reveal" data-reveal>Visit Us</p>
+          <h2 class="h2 reveal" data-reveal data-reveal-delay="80">
+            Find your way<br />to <em class="accent-italic">Kahani.</em>
+          </h2>
+
+          <address class="visit__address reveal" data-reveal data-reveal-delay="160">
+            <span class="visit__pin" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 21s-7-5.5-7-11a7 7 0 1 1 14 0c0 5.5-7 11-7 11z" stroke-linejoin="round" />
+                <circle cx="12" cy="10" r="2.6" />
+              </svg>
+            </span>
+            <span class="visit__lines">
+              371/A, 17th Main Rd,<br />
+              near Twin Park,<br />
+              Sector 3, HSR Layout,<br />
+              Bengaluru,<br />
+              Karnataka 560102
+            </span>
+          </address>
+
+          <div class="visit__meta reveal" data-reveal data-reveal-delay="220">
+            <div class="visit__meta-item">
+              <span class="visit__meta-label">Best For</span>
+              <span class="visit__meta-value">Lunch Hour Thali</span>
+            </div>
+            <div class="visit__meta-item">
+              <span class="visit__meta-label">Kitchen</span>
+              <span class="visit__meta-value">Pure North Indian</span>
+            </div>
+          </div>
+
+          <!-- Opens Google Maps search for the address (no API key needed) -->
+          <a class="btn btn--solid btn--lg reveal" data-reveal data-reveal-delay="280"
+             href="https://www.google.com/maps/search/?api=1&query=Kahani+Taste+Ki%2C+371%2FA%2C+17th+Main+Rd%2C+Sector+3%2C+HSR+Layout%2C+Bengaluru%2C+560102"
+             target="_blank" rel="noopener noreferrer">
+            Get Directions
+          </a>
+        </div>
+
+        <!-- Stylised, hand-built map (pure CSS/SVG — no map API) -->
+        <div class="map reveal" data-reveal data-reveal-delay="120" role="img"
+             aria-label="Stylised illustration of the restaurant's location in HSR Layout, Bengaluru">
+          <div class="map__canvas">
+            <span class="map__road map__road--h1"></span>
+            <span class="map__road map__road--h2"></span>
+            <span class="map__road map__road--v1"></span>
+            <span class="map__road map__road--v2"></span>
+            <span class="map__road map__road--diag"></span>
+            <span class="map__block map__block--a"></span>
+            <span class="map__block map__block--b"></span>
+            <span class="map__block map__block--c"></span>
+            <span class="map__park"><i>Twin Park</i></span>
+
+            <!-- Restaurant pin -->
+            <div class="map__pin">
+              <span class="map__pulse" aria-hidden="true"></span>
+              <span class="map__pin-dot" aria-hidden="true"></span>
+              <span class="map__pin-label">Kahani Taste Ki</span>
+            </div>
+
+            <span class="map__label map__label--street">17th Main Rd</span>
+            <span class="map__label map__label--sector">Sector 3, HSR Layout</span>
+          </div>
+
+          <div class="map__bar glass">
+            <span class="map__bar-title">HSR Layout, Bengaluru</span>
+            <span class="map__bar-sub">Karnataka 560102 · India</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         INSTAGRAM STRIP
+         ========================================================== -->
+    <section class="section insta">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow reveal" data-reveal>@kahanitasteki</p>
+          <h2 class="h2 reveal" data-reveal data-reveal-delay="80">
+            Follow Our Food <em class="accent-italic">Journey</em>
+          </h2>
+        </header>
+
+        <div class="insta__grid">
+          <!-- IMAGE: INSTAGRAM 1–6 — swap these with your latest six posts -->
+          <a class="insta__item reveal" data-reveal href="#gallery" aria-label="Thali post">
+            <img src="IMAGES/IMAGE-16.avif" alt="Thali plated with several small bowls" loading="lazy" decoding="async" />
+          </a>
+          <a class="insta__item reveal" data-reveal data-reveal-delay="60" href="#gallery" aria-label="Curry post">
+            <img src="IMAGES/IMAGE-17.avif"Spiced curry in a copper serving bowl" loading="lazy" decoding="async" />
+          </a>
+          <a class="insta__item reveal" data-reveal data-reveal-delay="120" href="#gallery" aria-label="Paneer post">
+            <img src="IMAGES/IMAGE-18.jpeg" alt="Paneer curry close-up" loading="lazy" decoding="async" />
+          </a>
+          <a class="insta__item reveal" data-reveal data-reveal-delay="180" href="#gallery" aria-label="Bread post">
+            <img src="IMAGES/IMAGE-19.jpeg" alt="Freshly baked Indian flatbread" loading="lazy" decoding="async" />
+          </a>
+          <a class="insta__item reveal" data-reveal data-reveal-delay="240" href="#gallery" aria-label="Dal post">
+            <img src="IMAGES/IMAGE-15.jpeg"Bowl of dal with fresh coriander" loading="lazy" decoding="async" />
+          </a>
+          <a class="insta__item reveal" data-reveal data-reveal-delay="300" href="#gallery" aria-label="Restaurant post">
+            <img src="IMAGES/IMAGE-11.jpeg"Warm restaurant interior" loading="lazy" decoding="async" />
+          </a>
+        </div>
+
+        <div class="insta__cta reveal" data-reveal>
+          <!-- Replace the href with your real Instagram profile -->
+          <a class="btn btn--outline btn--lg" href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            Follow on Instagram
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         FINAL CTA — terracotta
+         ========================================================== -->
+    <section class="cta">
+      <div class="container cta__inner">
+        <h2 class="cta__title reveal" data-reveal>
+          What's your <em class="cta__em">kahani</em> today?
+        </h2>
+        <p class="cta__sub reveal" data-reveal data-reveal-delay="100">
+          Come over. Take a seat. Let the food do the talking.
+        </p>
+        <a href="#menu" class="btn btn--cream btn--lg reveal" data-reveal data-reveal-delay="180">
+          Explore Our Menu
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================
+       FOOTER
+       ========================================================== -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a class="footer__logo" href="#home">Kahani <em>Taste Ki</em></a>
+        <p class="footer__tag">A little story in every bite.</p>
+      </div>
+
+      <nav class="footer__col" aria-label="Explore">
+        <h2 class="footer__head">Explore</h2>
+        <ul class="footer__list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#story">Our Story</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__col">
+        <h2 class="footer__head">Visit</h2>
+        <address class="footer__address">
+          371/A, 17th Main Rd,<br />
+          near Twin Park, Sector 3,<br />
+          HSR Layout, Bengaluru,<br />
+          Karnataka 560102, India
+        </address>
+      </div>
+
+      <nav class="footer__col" aria-label="Social">
+        <h2 class="footer__head">Social</h2>
+        <ul class="footer__list">
+          <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>&copy; <span id="year">2026</span> Kahani Taste Ki. All rights reserved.</p>
+      <p>Made with <span class="footer__heart" aria-label="love">❤️</span> in Bengaluru</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
